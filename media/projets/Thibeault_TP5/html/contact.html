@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TP Final Test</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styleContact.css" />
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/scrollreveal.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB_0eNNHxy5Q0ddsnT7eZCk4w5dhmSxhs&callback=initMap"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div class="left navigation">
+          <a href="evenements.html" class="left hvr-underline-from-center menu"
+            ><span>Événements</span></a
+          >
+        </div>
+        <div class="left navigation">
+          <a href="produits.html" class="left hvr-underline-from-center menu"
+            ><span>Produits</span></a
+          >
+        </div>
+        <div class="title">
+          <div class="clip">
+            <h1><a href="index.html" class="titreLien">Sous-Sol Hobby</a></h1>
+          </div>
+        </div>
+        <div class="navCache" id="leNav">
+          <div class="navClip" id="innerNav">
+            <a href="evenements.html" class="menuItem"
+              ><span>Événements</span></a
+            >
+            <a href="produits.html" class="menuItem"><span>Produits</span></a>
+            <a href="contact.html" class="menuItem"><span>Contact</span></a>
+            <a href="galerie.html" class="menuItem"><span>Galerie</span></a>
+            <p id="nav_mobile"></p>
+          </div>
+        </div>
+        <div class="right navigation">
+          <a href="contact.html" class="right hvr-underline-from-center menu"
+            ><span>Contact</span></a
+          >
+        </div>
+        <div class="right navigation">
+          <a href="galerie.html" class="right hvr-underline-from-center menu"
+            ><span>Galerie</span></a
+          >
+        </div>
+      </div>
+      <!--FIN DE NAV-->
+      <div class="content" id="accueil">
+        <div class="inner-wrapper">
+          <h2 class="hide">Nous Joindre</h2>
+          <content class="tel hide">
+            <p>
+              Téléphone : (450) 844-4469<br />
+              Courriel : soussolhobby@videotron.ca
+            </p>
+          </content>
+          <div id="map" class="hide"></div>
+          <content class="hide">
+            <p>
+              143 Maple Boulevard (Centre Maple), Chateauguay, Quebec, J6J 3R1
+            </p>
+          </content>
+          <h3 class="hide">Nos Heures d'Ouverture</h3>
+          <div id="infoContact" class="hide">
+            <content id="heures">
+              <table>
+                <tr>
+                  <td class="tdLeft">Lundi</td>
+                  <td>FERMÉ</td>
+                </tr>
+                <tr>
+                  <td class="tdLeft">Mardi</td>
+                  <td>FERMÉ</td>
+                </tr>
+                <tr>
+                  <td class="tdLeft">Mercredi</td>
+                  <td>10:00 - 17:30</td>
+                </tr>
+                <tr>
+                  <td class="tdLeft">Jeudi</td>
+                  <td>10:00 - 20:00</td>
+                </tr>
+                <tr>
+                  <td class="tdLeft">Vendredi</td>
+                  <td>10:00 - 20:00</td>
+                </tr>
+                <tr>
+                  <td class="tdLeft">Samedi</td>
+                  <td>10:00 - 16:00</td>
+                </tr>
+                <tr>
+                  <td class="tdLeft">Dimanche</td>
+                  <td>10:00 - 16:00</td>
+                </tr>
+              </table>
+            </content>
+          </div>
+        </div>
+        <!--FIN DE INNER-WRAPPER-->
+      </div>
+      <!--FIN DE CONTENT-->
+      <div class="footer">
+        <p>
+          Veuillez noter que les heures ci-haut pourraient être objets d'un
+          changement dans le cas d'un congé férié. Veuillez nous contacter pour
+          de plus amples informations.
+        </p>
+      </div>
+      <!--FIN DE FOOTER-->
+    </div>
+    <!--FIN DE CONTAINER-->
+    <script type="text/javascript">
+      window.sr = ScrollReveal();
+      sr.reveal(".hide", { duration: 2000 });
+    </script>
+  </body>
+</html>

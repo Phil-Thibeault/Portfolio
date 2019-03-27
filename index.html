@@ -1,0 +1,620 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <!--<link rel="stylesheet" href="css/main.css">-->
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navGrand">
+        <ul>
+            <li><a href="#first" class="js-scroll-trigger">Qui je suis</a></li>
+            <li><a href="#second" class="js-scroll-trigger">Éducation</a></li>
+            <li><a href="#third" class="js-scroll-trigger">Expérience</a></li>
+            <li><a href="#fourth" class="js-scroll-trigger">Connaissances</a></li>
+            <li><a href="#fifth" class="js-scroll-trigger">Mes projets</a></li>
+            <li><a href="#sixth" class="js-scroll-trigger">Me joindre</a></li>
+        </ul>
+    </nav>
+    <div class="navMobile">
+        <nav class="petitNav">
+            <ul>
+                <li><a href="#first" class="fermeNav">Qui je suis</a></li>
+                <li><a href="#second" class="fermeNav">Éducation</a></li>
+                <li><a href="#third" class="fermeNav">Expérience</a></li>
+                <li><a href="#fourth" class="fermeNav">Connaissances</a></li>
+                <li><a href="#fifth" class="fermeNav">Mes projets</a></li>
+                <li><a href="#sixth" class="fermeNav">Me joindre</a></li>
+            </ul>
+        </nav>
+        <input type="checkbox" id="chkBoutonBurger" />
+        <label for="chkBoutonBurger" class="boutonBurger" id="burger"></label>
+    </div>
+    <div class="container-fluid">
+        <div class="row flex-row firstDiv">
+            <div class="col-sm-12 col-md-12 col-lg-4 section1" id="first">
+                <div class="image">
+                    <img src="media/moi4.jpg" alt="Philippe" id="aPropos" style="width: auto; height: 450px; transform: translateX(-5vw)">
+                </div>
+                <div>
+                    <h1 class="fadeIn">Philippe Thibeault</h1>
+                    <h3 class="fadeIn">Intégrateur Multimédia</h3>
+                </div>
+                <hr class="ligneMobile"/>
+            </div>
+            <div class="col-md-12 col-lg-8 section2 fadeIn">
+                <p>
+                    Programmeur dans l'âme, j'aspire à devenir un expert en toute matière d'intégration multimédia.
+                    Ayant une bonne connaissance des différents langages du web et du jeu, j'ai un désir incessant
+                    d'en apprendre plus. J'espère aller loin dans cette industrie et laisser ma marque dans ce
+                    monde infini.
+                </p>
+                <hr class="ligneMobile" />
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <h3 class="sousTitre">Intérêts</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-lg-4">
+                        <h5><b>Programmation</b></h5>
+                        <p class="para fadeIn">Un passe-temps et un choix de carrière, la programmation est une activité à laquelle je me dévouerais pendant des heures avec plaisir.</p>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <h5><b>Musique</b></h5>
+                        <p class="para fadeIn">Que ce soit jouer de la batterie ou découvrir un genre musical nouveau pour moi, la musique aura toujours sa place dans mon esprit créatif.</p>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <h5><b>Voyage</b></h5>
+                        <p class="para fadeIn">Il n'y a pas deux endroits pareils dans le monde, et découvrir l'unicité de chaque lieu s'avère être à la fois un intérêt et un rêve pour moi.</p>
+                    </div>
+                </div>
+                <hr class="ligneMobile" />
+            </div>
+            <div class="col-sm-12 col-md-12 section-container fadeIn" id="second">
+                <div class="section3">
+                    <div style="display:inline-block;width:100vw;overflow-y:auto; text-align: center;">
+                        <ul class="timeline timeline-horizontal">
+                            <div class="line"></div>
+                            <li class="timeline-item">
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title"><b>DES</b></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Collège Héritage, Châteauguay</p>
+                                        <p>2009 - 2014</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title"><b>Sciences Informatiques et Mathématiques</b></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Collège Champlain, Saint-Lambert</p>
+                                        <p>2014 - 2016</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title"><b>DEC Techniques d'Intégration Multimédia</b></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Collège de Maisonneuve, Montréal</p>
+                                        <p>2016 - 2019</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="ligneMobile" />
+            </div>
+            <div class="col-sm-12 col-md-12 section-container" id="third">
+                <div class="section4">
+                    <div class="row">
+                        <div class="col-md-1 col-lg-1"></div>
+                            <div class="col-md-4 col-lg-4 conteneurEmploi">
+                                <div class="carte">
+                                    <div class="carte-avant">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-12">
+                                                <h4><b>Rona Châteauguay</b></h4>
+                                                <h6>Partenaire saisonnier et couvre-plancher</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-12">
+                                                <h5>2016 - 2019</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carte-arriere">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-12">
+                                                <p>Recevoir et placer la marchandise aux endroits appropriés</p>
+                                                <p>Offrir unservice à la clientèle professionnel, courtois et efficient</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="col-md-2 col-lg-2"></div>
+                        <div class="col-md-4 col-lg-4 conteneurEmploi">
+                            <div class="carte">
+                                <div class="carte-avant">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12">
+                                            <h4><b>IGA Châteauguay</b></h4>
+                                            <h6>Boulanger</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12">
+                                            <h5>2015 - 2016</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carte-arriere">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12">
+                                            <p>Préparer et faire cuire les produits</p>
+                                            <p>Offrir unservice à la clientèle professionnel, courtois et efficient</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1 col-lg-1"></div>
+                        <div class="col-md-4 col-lg-4 conteneurEmploi">
+                            <div class="carte">
+                                <div class="carte-avant">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12">
+                                            <h4><b>Bureau en Gros Châteauguay</b></h4>
+                                            <h6>Commis des articles de bureau</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12">
+                                            <h5>2015 - 2016</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carte-arriere">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12">
+                                            <p>Déduire et répondre aux besoins des clients</p>
+                                            <p>Recevoir et placer la marchandise aux endroits appropriés</p>
+                                            <p>Offrir un service à la clientèle professionnel, courtois et efficient</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2"></div>
+                        <div class="col-md-4 col-lg-4 conteneurEmploi">
+                            <div class="carte">
+                                <div class="carte-avant">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12">
+                                            <h4><b>Tim Hortons Châteauguay</b></h4>
+                                            <h6>Magasinier</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12">
+                                            <h5>2013 - 2014</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carte-arriere">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12">
+                                            <p>Recevoir et entreposer la marchandise</p>
+                                            <p>Prendre l'inventaire de la marchandise</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="ligneMobile" />
+            </div>
+            <div class="col-sm-12 col-md-12 section-container" id="fourth">
+                <div class="section5">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 separator" style="border-right: 3px solid white; text-align: left; margin-bottom: 5vh;">
+                            <div class="row">
+                                <div class="col-md-1 col-lg-2"></div>
+                                <div class="col-md-11 col-lg-10" style="text-decoration: underline;">
+                                    <h1 class="titre">Compétences</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1 col-lg-2"></div>
+                                <div class="col-md-5 col-lg-4">
+                                    <div class="cercles">
+                                        <div class="circle filled firstCircle"></div>
+                                        <div class="circle filled secondCircle"></div>
+                                        <div class="circle filled thirdCircle"></div>
+                                        <div class="circle filled fourthCircle"></div>
+                                        <div class="circle filled fifthCircle"></div>
+                                        <div class="circle filled sixthCircle"></div>
+                                        <div class="circle filled seventhCircle"></div>
+                                        <div class="circle filled eigthCircle"></div>
+                                        <div class="circle filled ninthCircle"></div>
+                                        <div class="circle filled tenthCircle"></div>
+                                    </div>
+                                    <p class="circleText">HTML5</p>
+                                </div>
+                                <div class="col-md-1 col-lg-2"></div>
+                                <div class="col-md-5 col-lg-4">
+                                    <div class="cercles">
+                                        <div class="circle filled firstCircle"></div>
+                                        <div class="circle filled secondCircle"></div>
+                                        <div class="circle filled thirdCircle"></div>
+                                        <div class="circle filled fourthCircle"></div>
+                                        <div class="circle filled fifthCircle"></div>
+                                        <div class="circle filled sixthCircle"></div>
+                                        <div class="circle filled seventhCircle"></div>
+                                        <div class="circle filled eigthCircle"></div>
+                                        <div class="circle filled ninthCircle"></div>
+                                        <div class="circle filled tenthCircle"></div>
+                                    </div>
+                                    <p class="circleText">CSS3</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1 col-lg-2"></div>
+                                <div class="col-md-5 col-lg-4">
+                                    <div class="cercles">
+                                        <div class="circle filled firstCircle"></div>
+                                        <div class="circle filled secondCircle"></div>
+                                        <div class="circle filled thirdCircle"></div>
+                                        <div class="circle filled fourthCircle"></div>
+                                        <div class="circle filled fifthCircle"></div>
+                                        <div class="circle filled sixthCircle"></div>
+                                        <div class="circle filled seventhCircle"></div>
+                                        <div class="circle filled eigthCircle"></div>
+                                        <div class="circle filled ninthCircle"></div>
+                                        <div class="circle empty tenthCircle"></div>
+                                    </div>
+                                    <p class="circleText">JavaScript</p>
+                                </div>
+                                <div class="col-md-1 col-lg-2"></div>
+                                <div class="col-md-5 col-lg-4">
+                                    <div class="cercles">
+                                        <div class="circle filled firstCircle"></div>
+                                        <div class="circle filled secondCircle"></div>
+                                        <div class="circle filled thirdCircle"></div>
+                                        <div class="circle filled fourthCircle"></div>
+                                        <div class="circle filled fifthCircle"></div>
+                                        <div class="circle filled sixthCircle"></div>
+                                        <div class="circle filled seventhCircle"></div>
+                                        <div class="circle filled eigthCircle"></div>
+                                        <div class="circle filled ninthCircle"></div>
+                                        <div class="circle empty tenthCircle"></div>
+                                    </div>
+                                    <p class="circleText">jQuery</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1 col-lg-2"></div>
+                                <div class="col-md-5 col-lg-4">
+                                    <div class="cercles">
+                                        <div class="circle filled firstCircle"></div>
+                                        <div class="circle filled secondCircle"></div>
+                                        <div class="circle filled thirdCircle"></div>
+                                        <div class="circle filled fourthCircle"></div>
+                                        <div class="circle filled fifthCircle"></div>
+                                        <div class="circle filled sixthCircle"></div>
+                                        <div class="circle filled seventhCircle"></div>
+                                        <div class="circle filled eigthCircle"></div>
+                                        <div class="circle empty ninthCircle"></div>
+                                        <div class="circle empty tenthCircle"></div>
+                                    </div>
+                                    <p class="circleText">SQL</p>
+                                </div>
+                                <div class="col-md-1 col-lg-2"></div>
+                                <div class="col-md-5 col-lg-4">
+                                    <div class="cercles">
+                                        <div class="circle filled firstCircle"></div>
+                                        <div class="circle filled secondCircle"></div>
+                                        <div class="circle filled thirdCircle"></div>
+                                        <div class="circle filled fourthCircle"></div>
+                                        <div class="circle filled fifthCircle"></div>
+                                        <div class="circle filled sixthCircle"></div>
+                                        <div class="circle filled seventhCircle"></div>
+                                        <div class="circle filled eigthCircle"></div>
+                                        <div class="circle empty ninthCircle"></div>
+                                        <div class="circle empty tenthCircle"></div>
+                                    </div>
+                                    <p class="circleText">PHP</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1 col-lg-2"></div>
+                                <div class="col-md-5 col-lg-4">
+                                    <div class="cercles">
+                                        <div class="circle filled firstCircle"></div>
+                                        <div class="circle filled secondCircle"></div>
+                                        <div class="circle filled thirdCircle"></div>
+                                        <div class="circle filled fourthCircle"></div>
+                                        <div class="circle filled fifthCircle"></div>
+                                        <div class="circle filled sixthCircle"></div>
+                                        <div class="circle filled seventhCircle"></div>
+                                        <div class="circle filled eigthCircle"></div>
+                                        <div class="circle empty ninthCircle"></div>
+                                        <div class="circle empty tenthCircle"></div>
+                                    </div>
+                                    <p class="circleText">C#</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="row">
+                                <div class="col-md-1 col-lg-1"></div>
+                                <div class="col-md-11 col-lg-11" style="text-decoration: underline;">
+                                    <h1 class="titre">Logiciels</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1 col-lg-1"></div>
+                                <div class="col-md-5 col-lg-4">
+                                    <div class="cercles">
+                                        <div class="circle filled firstCircle"></div>
+                                        <div class="circle filled secondCircle"></div>
+                                        <div class="circle filled thirdCircle"></div>
+                                        <div class="circle filled fourthCircle"></div>
+                                        <div class="circle filled fifthCircle"></div>
+                                        <div class="circle filled sixthCircle"></div>
+                                        <div class="circle filled seventhCircle"></div>
+                                        <div class="circle filled eigthCircle"></div>
+                                        <div class="circle filled ninthCircle"></div>
+                                        <div class="circle empty tenthCircle"></div>
+                                    </div>
+                                    <p class="circleText">EasyPHP</p>
+                                </div>
+                                <div class="col-md-1 col-lg-2"></div>
+                                <div class="col-md-5 col-lg-4">
+                                    <div class="cercles">
+                                        <div class="circle filled firstCircle"></div>
+                                        <div class="circle filled secondCircle"></div>
+                                        <div class="circle filled thirdCircle"></div>
+                                        <div class="circle filled fourthCircle"></div>
+                                        <div class="circle filled fifthCircle"></div>
+                                        <div class="circle filled sixthCircle"></div>
+                                        <div class="circle filled seventhCircle"></div>
+                                        <div class="circle filled eigthCircle"></div>
+                                        <div class="circle filled ninthCircle"></div>
+                                        <div class="circle empty tenthCircle"></div>
+                                    </div>
+                                    <p class="circleText">MySQL</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1 col-lg-1"></div>
+                                <div class="col-md-5 col-lg-4">
+                                    <div class="cercles">
+                                        <div class="circle filled firstCircle"></div>
+                                        <div class="circle filled secondCircle"></div>
+                                        <div class="circle filled thirdCircle"></div>
+                                        <div class="circle filled fourthCircle"></div>
+                                        <div class="circle filled fifthCircle"></div>
+                                        <div class="circle filled sixthCircle"></div>
+                                        <div class="circle filled seventhCircle"></div>
+                                        <div class="circle filled eigthCircle"></div>
+                                        <div class="circle filled ninthCircle"></div>
+                                        <div class="circle empty tenthCircle"></div>
+                                    </div>
+                                    <p class="circleText">Unity</p>
+                                </div>
+                                <div class="col-md-1 col-lg-2"></div>
+                                <div class="col-md-5 col-lg-4">
+                                    <div class="cercles">
+                                        <div class="circle filled firstCircle"></div>
+                                        <div class="circle filled secondCircle"></div>
+                                        <div class="circle filled thirdCircle"></div>
+                                        <div class="circle filled fourthCircle"></div>
+                                        <div class="circle filled fifthCircle"></div>
+                                        <div class="circle filled sixthCircle"></div>
+                                        <div class="circle empty seventhCircle"></div>
+                                        <div class="circle empty eigthCircle"></div>
+                                        <div class="circle empty ninthCircle"></div>
+                                        <div class="circle empty tenthCircle"></div>
+                                    </div>
+                                    <p class="circleText">Maya</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1 col-lg-1"></div>
+                                <div class="col-md-5 col-lg-4">
+                                    <div class="cercles">
+                                        <div class="circle filled firstCircle"></div>
+                                        <div class="circle filled secondCircle"></div>
+                                        <div class="circle filled thirdCircle"></div>
+                                        <div class="circle filled fourthCircle"></div>
+                                        <div class="circle filled fifthCircle"></div>
+                                        <div class="circle filled sixthCircle"></div>
+                                        <div class="circle filled seventhCircle"></div>
+                                        <div class="circle filled eigthCircle"></div>
+                                        <div class="circle empty ninthCircle"></div>
+                                        <div class="circle empty tenthCircle"></div>
+                                    </div>
+                                    <p class="circleText">WordPress</p>
+                                </div>
+                                <div class="col-md-1 col-lg-2"></div>
+                                <div class="col-md-5 col-lg-4">
+                                    <div class="cercles">
+                                        <div class="circle filled firstCircle"></div>
+                                        <div class="circle filled secondCircle"></div>
+                                        <div class="circle filled thirdCircle"></div>
+                                        <div class="circle filled fourthCircle"></div>
+                                        <div class="circle filled fifthCircle"></div>
+                                        <div class="circle filled sixthCircle"></div>
+                                        <div class="circle filled seventhCircle"></div>
+                                        <div class="circle filled eigthCircle"></div>
+                                        <div class="circle empty ninthCircle"></div>
+                                        <div class="circle empty tenthCircle"></div>
+                                    </div>
+                                    <p class="circleText">Adobe Premiere Pro</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1 col-lg-1"></div>
+                                <div class="col-md-5 col-lg-4">
+                                    <div class="cercles">
+                                        <div class="circle filled firstCircle"></div>
+                                        <div class="circle filled secondCircle"></div>
+                                        <div class="circle filled thirdCircle"></div>
+                                        <div class="circle filled fourthCircle"></div>
+                                        <div class="circle filled fifthCircle"></div>
+                                        <div class="circle filled sixthCircle"></div>
+                                        <div class="circle filled seventhCircle"></div>
+                                        <div class="circle filled eigthCircle"></div>
+                                        <div class="circle empty ninthCircle"></div>
+                                        <div class="circle empty tenthCircle"></div>
+                                    </div>
+                                    <p class="circleText">Adobe Photoshop</p>
+                                </div>
+                                <div class="col-md-1 col-lg-2"></div>
+                                <div class="col-md-5 col-lg-4">
+                                    <div class="cercles">
+                                        <div class="circle filled firstCircle"></div>
+                                        <div class="circle filled secondCircle"></div>
+                                        <div class="circle filled thirdCircle"></div>
+                                        <div class="circle filled fourthCircle"></div>
+                                        <div class="circle filled fifthCircle"></div>
+                                        <div class="circle filled sixthCircle"></div>
+                                        <div class="circle filled seventhCircle"></div>
+                                        <div class="circle filled eigthCircle"></div>
+                                        <div class="circle empty ninthCircle"></div>
+                                        <div class="circle empty tenthCircle"></div>
+                                    </div>
+                                    <p class="circleText">Adobe Illustrator</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="ligneMobile" />
+            </div>
+            <div class="col-sm-12 col-md-12 section-container" id="fifth">
+                <div class="section6">
+                    <h1>Projets</h1>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-5 projet" id="project1">
+                            <a href="#" class="openProject grand">
+                                <div class="descProject">
+                                    <p>Projet de 3ème session. Le but était de recréer le site web d'une compagnie locale qui était dû pour une refonte.
+                                        Ici, j'ai refait le site web d'une compagnie de jeux de tables nommée «Sous-Sol Hobby». Dans la conception du
+                                        site, j'ai tenté de moderniser et simplifier tout en gardant l'aspect de «Sous-Sol».</p>
+                                </div>
+                                <div class="imgProject">
+                                    <img src="./media/projets/Thibeault_TP5/images/logo.jpg" style="width: 100%;">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-2"></div>
+                        <div class="col-sm-12 col-md-12 col-lg-5 projet" id="project1">
+                            <a href="#" class="openProject grand">
+                                <div class="descProject">
+                                    <p>Projet de 3ème session. Le but était de recréer le site web d'une compagnie locale qui était dû pour une
+                                        refonte.
+                                        Ici, j'ai refait le site web d'une compagnie de jeux de tables nommée «Sous-Sol Hobby». Dans la
+                                        conception du
+                                        site, j'ai tenté de moderniser et simplifier tout en gardant l'aspect de «Sous-Sol».</p>
+                                </div>
+                                <div class="imgProject">
+                                    <img src="./media/projets/Thibeault_TP5/images/logo.jpg" style="width: 100%;">
+                                </div>
+                            </a>
+                            <div href="#" class="openProject mobile">
+                                <div class="descProject">
+                                    <p>Projet de 3ème session. Le but était de recréer le site web d'une compagnie locale qui était dû pour une
+                                        refonte.
+                                        Ici, j'ai refait le site web d'une compagnie de jeux de tables nommée «Sous-Sol Hobby». Dans la
+                                        conception
+                                        du
+                                        site, j'ai tenté de moderniser et simplifier tout en gardant l'aspect de «Sous-Sol».</p>
+                                </div>
+                                <div class="imgProject">
+                                    <img src="./media/projets/Thibeault_TP5/preview.png" class="mobile" style="width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="ligneMobile" />
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 section-container" id="sixth">
+                <div class="section7">
+                    <h1>Me Joindre</h1>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Courriel</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Sujet du courriel">
+                        </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                        <p><a id="mail-link" class="btn btn-primary">Envoyer</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row flex-row flex-sm-nowrap firstDiv">
+            <div class="col-sm-1 col-md-1"></div>
+            <div class="col-sm-4 col-md-4 contact">
+                <p><b>Téléphone : </b>(514) 662-0482</p>
+            </div>
+            <div class="col-sm-4 col-md-4 contact">
+                <p><b>Courriel : </b>philippe.thibeault99@outlook.com</p>
+            </div>
+            <div class="col-sm-3 col-md-3 social">
+                <a href="https://www.linkedin.com/in/philippethibeault99/" target="_blank">
+                    <img src="media/3225190-48.png" alt="linkedin" class="social-icon">
+                </a>
+                <a href="https://www.facebook.com/phil.thibeault.3" target="_blank">
+                    <img src="media/3225194-48.png" alt="facebook" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/openPopUp.js"></script>
+    <script src="js/loadAnimations.js"></script>
+    <script src="js/courriel.js"></script>
+    <script src="js/navMobile.js"></script>
+</body>
+
+</html>

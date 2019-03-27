@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TP Final Test</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styleProduits.css" />
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/scrollreveal.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB_0eNNHxy5Q0ddsnT7eZCk4w5dhmSxhs&callback=initMap"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div class="left navigation">
+          <a href="evenements.html" class="left hvr-underline-from-center menu"
+            ><span>Événements</span></a
+          >
+        </div>
+        <div class="left navigation">
+          <a href="produits.html" class="left hvr-underline-from-center menu"
+            ><span>Produits</span></a
+          >
+        </div>
+        <div class="title">
+          <div class="clip">
+            <h1><a href="index.html" class="titreLien">Sous-Sol Hobby</a></h1>
+          </div>
+        </div>
+        <div class="navCache" id="leNav">
+          <div class="navClip" id="innerNav">
+            <a href="evenements.html" class="menuItem"
+              ><span>Événements</span></a
+            >
+            <a href="produits.html" class="menuItem"><span>Produits</span></a>
+            <a href="contact.html" class="menuItem"><span>Contact</span></a>
+            <a href="galerie.html" class="menuItem"><span>Galerie</span></a>
+            <p id="nav_mobile"></p>
+          </div>
+        </div>
+        <div class="right navigation">
+          <a href="contact.html" class="right hvr-underline-from-center menu"
+            ><span>Contact</span></a
+          >
+        </div>
+        <div class="right navigation">
+          <a href="galerie.html" class="right hvr-underline-from-center menu"
+            ><span>Galerie</span></a
+          >
+        </div>
+      </div>
+      <!--FIN DE NAV-->
+      <div class="content" id="produits">
+        <h2 class="hide">Nos Produits</h2>
+        <div class="inner-wrapper">
+          <div class="hide boutons">
+            <section>
+              <img src="../images/bouton-01.png" class="bouton1" />
+            </section>
+            <section>
+              <img src="../images/bouton-03.png" class="bouton2" />
+            </section>
+            <section>
+              <img src="../images/bouton-04.png" class="bouton3" />
+            </section>
+            <section>
+              <img src="../images/bouton-02.png" class="bouton4" />
+            </section>
+          </div>
+          <div class="hide yugioh">
+            <img src="../images/Yugioh_Logo.png" />
+            <p></p>
+          </div>
+        </div>
+        <!--FIN DE INNER-WRAPPER-->
+      </div>
+      <!--FIN DE CONTENT-->
+      <div class="footer">
+        <div id="map"></div>
+        <div id="infoContact">
+          <content id="heures">
+            <h3>Heures d'ouverture</h3>
+            <table>
+              <tr>
+                <td>Lundi</td>
+                <td>FERMÉ</td>
+              </tr>
+              <tr>
+                <td>Mardi</td>
+                <td>FERMÉ</td>
+              </tr>
+              <tr>
+                <td>Mercredi</td>
+                <td>10:00 - 17:30</td>
+              </tr>
+              <tr>
+                <td>Jeudi</td>
+                <td>10:00 - 20:00</td>
+              </tr>
+              <tr>
+                <td>Vendredi</td>
+                <td>10:00 - 20:00</td>
+              </tr>
+              <tr>
+                <td>Samedi</td>
+                <td>10:00 - 16:00</td>
+              </tr>
+              <tr>
+                <td>Dimanche</td>
+                <td>10:00 - 16:00</td>
+              </tr>
+            </table>
+          </content>
+        </div>
+        <content class="tel">
+          <p>
+            Téléphone : (450) 844-4469<br />
+            Courriel : soussolhobby@videotron.ca
+          </p>
+        </content>
+        <content>
+          <p>
+            143 Maple Boulevard (Centre Maple), Chateauguay, Quebec, J6J 3R1
+          </p>
+        </content>
+      </div>
+      <!--FIN DE FOOTER-->
+    </div>
+    <!--FIN DE CONTAINER-->
+    <script type="text/javascript">
+      window.sr = ScrollReveal();
+      sr.reveal(".hide", { duration: 2000 });
+    </script>
+  </body>
+</html>
