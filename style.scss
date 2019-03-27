@@ -1,259 +1,4 @@
-/*html body {
-  color: rgba(0, 0, 0, 0);
-  padding-top: 20px;
-  background-image: url("../media/background.jpg");
-  overflow-x: hidden;
-  font-size: 0.6em;
-
-  .navGrand {
-    display: none;
-  }
-  .navMobile {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 100vw;
-
-    nav {
-      position: relative;
-      left: -100%;
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      transition: left 1s ease-out;
-      ul {
-        li {
-          margin-bottom: 5px;
-          a {
-            font-size: 2em;
-            color: #fff;
-          }
-        }
-      }
-    }
-
-    #chkBoutonBurger {
-      display: none;
-    }
-
-    .boutonBurger {
-      transition: 1s transform;
-      &:before {
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: attr(data-before);
-        color: #fff;
-        font-size: 4em;
-        padding: 0 20px;
-      }
-    }
-  }
-
-  .container-fluid {
-    .firstDiv {
-      display: flex;
-      flex-direction: column !important;
-
-      .ligneMobile {
-        width: 100%;
-        margin: 20px auto;
-        border: 1px solid rgba(255, 255, 255, 1) !important;
-      }
-
-      .section1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        text-align: justify;
-        color: #000 !important;
-        margin-bottom: 20px;
-        text-align: center;
-
-        .image {
-          width: 50vw;
-          height: 50vw;
-          margin: 0 auto;
-          border-radius: 200px;
-          overflow: hidden;
-          position: relative;
-
-          img {
-            width: 80vw !important;
-            height: auto !important;
-          }
-        }
-      }
-
-      .section2 {
-        margin: 0 auto;
-        p {
-          font-size: 2em;
-          padding-bottom: 30px;
-          text-align: justify;
-        }
-      }
-
-      #second {
-        .section3 {
-          .timeline,
-          .timeline-horizontal {
-            list-style: none;
-            padding: 20px 0;
-            position: relative;
-
-            .line {
-              position: absolute;
-              z-index: 99;
-              right: 20%;
-              top: 0%;
-              opacity: 0;
-              height: 0%;
-              border-left: 5px solid #eeeeee !important;
-              border-radius: 20px;
-
-              -webkit-transition: height 3s ease-in;
-              -moz-transition: height 3000ms ease-in;
-              -o-transition: height 3000ms ease-in;
-              transition: height 3000ms ease-in;
-            }
-
-            li {
-              text-align: left;
-              padding: 0 0 20px 0 !important;
-              max-width: 60%;
-
-              p {
-                font-size: 2em;
-              }
-            }
-          }
-          .active {
-            opacity: 1 !important;
-            height: 100% !important;
-          }
-        }
-      }
-
-      #third {
-        .section4 {
-          .conteneurEmploi {
-            height: 30vh;
-            width: 100vw;
-            padding-top: 10px;
-            color: #fff;
-            background-color: transparent;
-            margin: 5vh 0;
-            font-size: 2em;
-          }
-        }
-      }
-
-      #fourth {
-        .section5 {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          color: #fff;
-
-          .separator {
-            border: none !important;
-          }
-
-          p {
-            font-size: 1.5em;
-          }
-
-          .fadeInText {
-            opacity: 1 !important;
-          }
-
-          .cercles {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-
-            .circle {
-              width: 15px;
-              height: 15px;
-              border-radius: 20px;
-              margin-right: 8px;
-              opacity: 0;
-
-              -webkit-transition: opacity 1s ease-in;
-              -moz-transition: opacity 1000ms ease-in;
-              -o-transition: opacity 1000ms ease-in;
-              transition: opacity 1000ms ease-in;
-            }
-
-            .fadeInCircle {
-              opacity: 1;
-            }
-
-            .filled {
-              background-color: #fff;
-            }
-
-            .empty {
-              background-color: rgba(0, 0, 0, 0);
-              border: 1px solid #fff;
-            }
-          }
-
-          .circleText {
-            opacity: 0;
-            font-size: 2em;
-
-            -webkit-transition: opacity 1s ease-in;
-            -moz-transition: opacity 1000ms ease-in;
-            -o-transition: opacity 1000ms ease-in;
-            transition: opacity 1000ms ease-in;
-          }
-        }
-      }
-
-      #fifth {
-        .section6 {
-          h1 {
-            color: #fff;
-            text-decoration: underline;
-          }
-
-          .projet {
-            .mobile {
-              p {
-                color: #fff;
-                font-size: 1.7em;
-              }
-            }
-            .grand {
-              display: none;
-            }
-            .mobile {
-              display: block;
-            }
-          }
-        }
-      }
-
-      #sixth {
-        .section7 {
-          h1 {
-            color: #fff;
-          }
-        }
-      }
-
-      footer {
-        display: none !important;
-      }
-    }
-  }
-}*/
-
+//MOBILE
 @media only screen and (max-width: 576px) {
   html body {
     color: rgba(0, 0, 0, 0);
@@ -327,7 +72,7 @@
           flex-direction: column;
           justify-content: flex-start;
           text-align: justify;
-          color: #000 !important;
+          color: #fff !important;
           margin: 20px 1vw;
           text-align: center;
 
@@ -400,6 +145,9 @@
         #third {
           margin: 0 1vw;
           .section4 {
+            h1 {
+              color: #fff;
+            }
             .conteneurEmploi {
               height: 30vh;
               width: 100vw;
@@ -528,6 +276,7 @@
   }
 }
 
+//TABLETTE
 @media only screen and (min-width: 576px) and (max-width: 992px) {
   html body {
     color: rgba(0, 0, 0, 0);
@@ -603,7 +352,7 @@
           flex-direction: column;
           justify-content: flex-start;
           text-align: justify;
-          color: #000 !important;
+          color: #fff !important;
           margin-bottom: 20px auto;
           text-align: center;
           width: 95vw;
@@ -805,6 +554,7 @@
   }
 }
 
+//GRAND ÉCRAN
 @media only screen and (min-width: 992px) {
   html body {
     color: #fff;
@@ -892,6 +642,7 @@
         h1,
         h3 {
           text-align: center;
+          color: #fff !important;
         }
 
         .image {
@@ -909,6 +660,7 @@
       }
 
       .section2 {
+        color: #fff !important;
         text-align: left;
         font-size: 0.9em;
         width: 75vw;
@@ -939,6 +691,7 @@
       }
 
       .section3 {
+        color: #fff !important;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1134,6 +887,9 @@
       }
 
       .section4 {
+        h1 {
+          color: #fff;
+        }
         .conteneurEmploi {
           height: 30vh;
           padding-top: 10px;

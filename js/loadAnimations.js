@@ -1,9 +1,15 @@
+/**
+ * Ce script sert à gérer tout ce qui a rapport avec les animation
+ * contrôlés par le défilement dans la page
+ *
+ * @author Philippe Thibeault
+ * @version 2019-03-26
+ */
 $(document).ready(function() {
-  var aTextes = document.getElementsByClassName("fadeIn");
+  //Aller chercher les /l/ments de la ligne de temps (éducation)
   var aTimelineItems = document.getElementsByClassName("timeline-item");
-  var aEmplois = document.getElementsByClassName("conteneurEmploi");
-  var aCercles = document.getElementsByClassName("cercles");
 
+  //Tous les cercles affichés dans les compétences
   var first = document.getElementsByClassName("firstCircle");
   var second = document.getElementsByClassName("secondCircle");
   var third = document.getElementsByClassName("thirdCircle");
@@ -15,34 +21,42 @@ $(document).ready(function() {
   var ninth = document.getElementsByClassName("ninthCircle");
   var tenth = document.getElementsByClassName("tenthCircle");
 
+  //Le texte affiché dans les compétences
   var aTextCircles = document.getElementsByClassName("circleText");
 
-  for (var i = 0; i < aTextes.length; i++) {
-    $(aTextes[i]).animate(
-      {
-        color: "rgba(255, 255, 255, 1)"
-      },
-      "slow"
-    );
-  }
+  //Faire un "fade in" sur la page
+  $("body").animate(
+    {
+      color: "rgba(255, 255, 255, 1)"
+    },
+    "slow"
+  );
 
+  //Losqu'il y a un défilement
   $(window).scroll(function() {
+    //Largeur de la page
     var w = Math.max(
       document.documentElement.clientWidth,
       window.innerWidth || 0
     );
+    //Positions horizontales des éléments à atteindre
     var horPos2 = Math.floor($("#second").offset().left);
     var horPos4 = Math.floor($("#fourth").offset().left);
 
+    //Positions verticales des éléments à atteindre
     var vertPos2 = Math.floor($("#second").offset().top);
     var vertPos4 = Math.floor($("#fourth").offset().top);
 
+    //Distance défilée horizontalement et verticalement
     var horWindowPos = $(window).scrollLeft();
     var vertWindowPos = $(window).scrollTop();
 
+    //Si la page est en grand écran (scroll horizontal)
     if (w >= 1024) {
+      //Si on atteint la ligne de temps
       if (horWindowPos >= horPos2) {
         if ($(".line").css("opacity") == 0) {
+          //Faire apparaitre la ligne de temps graduellement et chaque élément un à la suite de l'autre
           $(".line").addClass("active");
           setTimeout(function() {
             fadeIn(aTimelineItems[0]);
@@ -55,7 +69,9 @@ $(document).ready(function() {
           }, 2400);
         }
       }
+      //Si on atteint les compétences
       if (horWindowPos >= horPos4) {
+        //Faire apparaitre les cercles en ordre, des premiers aux dixièmes
         FadeInCircles(1);
         setTimeout(function() {
           FadeInCircles(2);
@@ -85,9 +101,12 @@ $(document).ready(function() {
           FadeInCircles(10);
         }, 900);
       }
+      //Si la page est en petit écran (scroll vertical)
     } else if (w < 1024) {
+      //Si on atteint la ligne de temps
       if (vertWindowPos >= vertPos2 - vertPos2 / 2) {
         if ($(".line").css("opacity") == 0) {
+          //Faire apparaitre la ligne de temps graduellement et chaque élément un à la suite de l'autre
           $(".line").addClass("active");
           setTimeout(function() {
             fadeIn(aTimelineItems[0]);
@@ -100,8 +119,9 @@ $(document).ready(function() {
           }, 2400);
         }
       }
+      //Si on atteint les compétences
       if (vertWindowPos >= vertPos4) {
-        console.log("YES");
+        //Faire apparaitre les cercles en ordre, des premiers aux dixièmes
         FadeInCircles(1);
         setTimeout(function() {
           FadeInCircles(2);
@@ -134,10 +154,12 @@ $(document).ready(function() {
     }
   });
 
+  //Fonction qui fait apparaitre graduellement les éléments de la ligne de temps
   function fadeIn(item) {
     $(item).animate({ opacity: 1 }, "fast");
   }
 
+  //Fonction qui fait apparaitre les cercles selon le array dans lequel ils se trouvent
   function FadeInCircles(number) {
     switch (number) {
       case 1:
@@ -189,6 +211,7 @@ $(document).ready(function() {
         for (var i = 0; i < tenth.length; i++) {
           $(tenth[i]).addClass("fadeInCircle");
         }
+        //Lorsqu'on affiche les derniers cercles, afficher le texte
         setTimeout(function() {
           fadeInArray(aTextCircles);
         }, 100);
@@ -196,6 +219,7 @@ $(document).ready(function() {
     }
   }
 
+  //Fonction qui fait afficher les titres des compétences
   function fadeInArray(aText) {
     for (var i = 0; i < aText.length; i++) {
       $(aText[i]).addClass("fadeInText");
